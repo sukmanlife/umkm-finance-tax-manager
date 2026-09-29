@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>@yield('title', 'UMKM Manager') · UMKM Manager</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+:root{--ink:#163330;--muted:#657975;--green:#157562;--line:#e2eae6;--paper:#f5f7f4}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,sans-serif;font-size:14px}a{color:var(--green)}.shell-nav{width:232px;position:fixed;inset:0 auto 0 0;background:#102d29;color:white;padding:32px 20px;display:flex;flex-direction:column;gap:32px}.brand{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:750}.brand-mark{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:#d2edab;color:#17392c;font-size:18px}.nav-caption{font-size:10px;letter-spacing:2px;color:#9bb9b0;margin:0 12px 12px}.menu{display:grid;gap:6px}.menu a{color:#bfd1cb;text-decoration:none;padding:13px 14px;border-radius:9px;font-weight:550}.menu a:hover,.menu a.active{background:#254b41;color:white}.menu a.active{box-shadow:inset 3px 0 #d2edab}.nav-foot{margin-top:auto;padding:0 10px}.nav-foot small{display:block;color:#adc6bd;margin-bottom:12px}.workspace{margin-left:232px;padding:0 42px 48px;max-width:1800px}.topbar{height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;margin-bottom:34px;color:var(--muted)}.topbar strong{color:var(--ink)}.page-head{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:26px}.eyebrow{text-transform:uppercase;letter-spacing:1.7px;font-size:10px;font-weight:750;color:var(--green);margin-bottom:8px}h1{font-size:30px;letter-spacing:-1px;font-weight:750;margin-bottom:8px}h2{font-size:25px;font-weight:700}h3{font-size:17px;font-weight:700}.muted{color:var(--muted)}.btn{border-radius:8px;font-size:13px;font-weight:600;padding:10px 16px}.btn-dark,.btn-primary{background:var(--green);border-color:var(--green)}.btn-dark:hover,.btn-primary:hover{background:#105b4c;border-color:#105b4c}.btn-outline-dark{color:var(--ink);border-color:#bccdc5}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:24px}.metric,.card{border:1px solid var(--line);border-radius:13px;background:white;box-shadow:none!important}.metric{padding:22px;min-width:0}.metric-label{font-size:12px;color:var(--muted);margin-bottom:12px}.metric-value{font-size:clamp(19px,2vw,27px);font-weight:750;letter-spacing:-.7px;overflow-wrap:anywhere}.metric-note{font-size:11px;color:var(--muted);margin-top:9px}.overview-band{background:#173f34;border-radius:13px;padding:24px 28px;color:white;display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:26px}.overview-band p{color:#bdd7cb;margin:0;font-size:12px}.overview-band strong{display:block;font-size:28px;font-weight:650;margin:7px 0}.overview-band .btn{background:#d2edab;border-color:#d2edab;color:#183f31;white-space:nowrap}.section-head{padding:24px 24px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px}.section-head p{font-size:12px;margin:6px 0 0;color:var(--muted)}.section-head a{font-size:12px;font-weight:650;text-decoration:none}.table{--bs-table-bg:transparent;color:var(--ink);font-size:13px;margin-bottom:0}.table th{background:#f6f8f5;color:var(--muted);font-size:11px;font-weight:650;white-space:nowrap;padding:14px 20px;border-bottom:1px solid var(--line)}.table td{padding:18px 20px;border-color:var(--line);vertical-align:middle}.table tbody tr:last-child td{border-bottom:0}.table tbody tr:hover{background:#fafcf9}.money{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:650}.client-name{font-weight:600}.table-responsive{border-radius:0 0 13px 13px}.alert{border-radius:10px}.form-control,.form-select{border-color:#d5e0da;border-radius:8px}.form-control:focus,.form-select:focus{border-color:var(--green);box-shadow:0 0 0 3px #15756218}.footer-note{font-size:11px;color:var(--muted);margin-top:20px}.guest .shell-nav{position:static;width:100%;padding:20px}.guest .workspace{margin:0;max-width:1000px;margin-inline:auto;padding-top:32px}a:focus-visible,button:focus-visible{outline:3px solid #83b7a7;outline-offset:3px}
+@media(min-width:1600px){.workspace{padding-inline:60px}}@media(max-width:1100px){.workspace{padding-inline:24px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.shell-nav{position:static;width:100%;padding:18px;gap:20px}.menu{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}.menu a{text-align:center;padding:10px 3px;font-size:11px}.nav-caption{display:none}.nav-foot{margin:0;padding:0;display:flex;align-items:center;justify-content:space-between;gap:10px}.nav-foot small{margin:0}.workspace{margin:0;padding:0 16px 32px}.topbar{height:62px;margin-bottom:24px;font-size:12px}.page-head{align-items:flex-start;flex-direction:column}.page-head h1{font-size:27px}.metric{padding:16px}.metrics{gap:10px}.metric-value{font-size:21px}.overview-band{padding:22px;align-items:flex-start;flex-direction:column}.overview-band strong{font-size:25px}.section-head{padding:20px 16px}.table th,.table td{padding:14px}.section-head a{white-space:nowrap}}
+</style>
+</head>
+<body class="@guest guest @endguest">
+<a href="#main-content" class="visually-hidden-focusable">Lewati ke konten</a>
+<aside class="shell-nav">
+<a class="brand" href="{{ route('dashboard') }}"><span class="brand-mark" aria-hidden="true">U</span> UMKM Manager</a>
+@auth
+<div><p class="nav-caption">RUANG KERJA</p><nav class="menu" aria-label="Menu utama">
+<a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}" @if(request()->routeIs('dashboard')) aria-current="page" @endif>Dashboard</a>
+<a href="{{ route('customers.index') }}" class="{{ request()->routeIs('customers.*') ? 'active' : '' }}" @if(request()->routeIs('customers.*')) aria-current="page" @endif>Pelanggan</a>
+<a href="{{ route('transactions.index') }}" class="{{ request()->routeIs('transactions.*') ? 'active' : '' }}" @if(request()->routeIs('transactions.*')) aria-current="page" @endif>Transaksi</a>
+<a href="{{ route('reports.index') }}" class="{{ request()->routeIs('reports.*') ? 'active' : '' }}" @if(request()->routeIs('reports.*')) aria-current="page" @endif>Laporan</a>
+</nav></div>
+<div class="nav-foot"><small>{{ auth()->user()->name }}</small><form action="{{ route('logout') }}" method="POST">@csrf<button class="btn btn-outline-light btn-sm" type="submit">Keluar akun</button></form></div>
+@endauth
+</aside>
+<div class="workspace">
+@auth<div class="topbar"><span>Keuangan usaha / <strong>@yield('title', 'Dashboard')</strong></span><span>{{ now()->format('d/m/Y') }}</span></div>@endauth
+<main id="main-content">
+@if(session('success'))<div class="alert alert-success" role="status">{{ session('success') }}</div>@endif
+@if($errors->any())<div class="alert alert-danger" role="alert"><ul class="mb-0">@foreach($errors->all() as $error)<li>{{ $error }}</li>@endforeach</ul></div>@endif
+@yield('content')
+</main>
+</div>
+</body>
+</html>

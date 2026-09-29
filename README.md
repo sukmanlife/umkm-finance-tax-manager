@@ -4,6 +4,41 @@ Aplikasi web untuk mencatat pelanggan, transaksi, pendapatan, dan pajak usaha da
 
 Proyek ini merupakan portofolio pengembangan aplikasi keuangan sederhana untuk UMKM.
 
+## Tampilan aplikasi
+
+### Dashboard
+
+Ringkasan pelanggan, transaksi, pendapatan, dan pajak, lengkap dengan daftar transaksi terbaru.
+
+![Dashboard UMKM Manager](docs/screenshots/dashboard.png)
+
+<details>
+<summary><strong>Pelanggan — lihat screenshot</strong></summary>
+
+Pencarian dan pengelolaan data pelanggan.
+
+![Halaman pelanggan UMKM Manager](docs/screenshots/pelanggan.png)
+
+</details>
+
+<details>
+<summary><strong>Transaksi — lihat screenshot</strong></summary>
+
+Daftar transaksi dengan rincian nominal, tarif pajak, dan total.
+
+![Halaman transaksi UMKM Manager](docs/screenshots/transaksi.png)
+
+</details>
+
+<details>
+<summary><strong>Laporan bulanan — lihat screenshot</strong></summary>
+
+Ringkasan pendapatan dan pajak per bulan berdasarkan tahun yang dipilih.
+
+![Laporan bulanan UMKM Manager](docs/screenshots/laporan.png)
+
+</details>
+
 ## Fitur
 
 - **Dashboard usaha:** jumlah pelanggan dan transaksi, total pendapatan sebelum pajak, akumulasi pajak, serta total nilai transaksi.
